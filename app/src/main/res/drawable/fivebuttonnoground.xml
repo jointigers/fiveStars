@@ -1,0 +1,19 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/colorAccent" android:width="1dp"></stroke>
+            <solid android:color="@color/five_starts_no" />
+            <corners android:radius="84.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle" >
+            <stroke android:color="@color/colorAccent" android:width="1dp"></stroke>
+
+            <solid android:color="@color/five_starts_no" />
+            <corners android:radius="84.0dip" />
+        </shape>
+    </item>
+</layer-list>

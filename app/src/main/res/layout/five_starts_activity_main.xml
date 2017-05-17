@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:id="@+id/fiveStarRate"
+    android:layout_marginRight="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/five_starts_background" />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="254dp"
+            android:layout_height="162dp"
+            android:gravity="center"
+            android:src="@drawable/five_start"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/five_start_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:background="@drawable/fivebuttonground"
+                    android:text="Rate 5 stars"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="71dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/five_start_x" />
+    </FrameLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <View android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/five_no_thanks"
+            android:layout_height="37dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignRight="@id/strut"
+            android:layout_alignParentLeft="true"
+            android:textColor="#999999"
+            android:textSize="15dp"
+            android:background="@drawable/fivebuttonnoground"
+            android:text="No thanks"/>
+        <Button
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:id="@+id/five_later"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="37dp"
+            android:background="@drawable/fivebuttonnoground"
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+            android:text="Maybe later"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
